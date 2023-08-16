@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}">Click here to route to index</a>
+    <br>
+    <a href="{{ url_for('base') }}">Click here to route to base</a>
+
+    {% block bodyblock %}
+        <h1 class="change">Welcome to Arman New Learnig Flask</h1>
+        <h2>Everything is base html </h2>
+    {% endblock %}
+     
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
